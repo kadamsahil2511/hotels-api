@@ -20,7 +20,7 @@ app.get("/",(request,response)=>{
     response.send("Welcome to Hotels API")
 });
 
-app.listen(3000,()=>{
+app.listen(10000,()=>{
     console.log("Server started on port 3000"); 
 });
 
