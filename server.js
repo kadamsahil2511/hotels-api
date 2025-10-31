@@ -23,3 +23,6 @@ app.get("/",(request,response)=>{
 app.listen(3000,()=>{
     console.log("Server started on port 3000"); 
 });
+
+// simple health check used by hosting providers
+app.get('/health', (req, res) => res.status(200).json({ status: 'ok' }));
